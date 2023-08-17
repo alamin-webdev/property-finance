@@ -1,0 +1,180 @@
+/* header logo css start  */
+.logo {
+    width: 140px;
+}
+
+/* header logo css end  */
+
+/* remortgage page  */
+.a_ul {
+    display: block !important;
+}
+
+.a_ul li {
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.a_header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    color: #000;
+    padding: 63px 0;
+}
+
+.a_header p::before, .a_header p::after {
+    background-color: #e4a448;
+    position: absolute;
+    display: block;
+    content: "";
+    left: 50%;
+    margin-left: -1px;
+    height: 60px;
+    width: 2px;
+
+}
+
+.a_header p::before {
+    top: 0;
+}
+
+.a_header p::after {
+    bottom: 0;
+}
+
+.choose-us {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.choose-us::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1000000015;
+    background: linear-gradient(270deg, #e4a448 0%, #FCB650 100%);
+    z-index: -1;
+
+}
+
+/* remortgage page  */
+
+
+
+/* first time buyer page  */
+.handy_tools_section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background: linear-gradient(90deg, #e4a448 0%, #FCB650 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+/* first time buyer page  */
+
+
+/* calculator page  */
+.a_card_custom {
+    padding: 25px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 5px 16px #e4a448;
+}
+
+/* calculator page  */
+
+.form_control_a {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-form-control-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-group>.form_control_a {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.input-group-lg>.btn, .input-group-lg>.form_control_a, .input-group-lg>.form-select, .input-group-lg>.input-group-text {
+    padding: .4rem 1rem;
+    font-size: 1.25rem;
+    border-radius: var(--bs-border-radius-lg);
+}
+
+.avatar__img {
+    display: flex;
+    border-radius: 50%;
+    width: 67px;
+    justify-self: start;
+    padding: 10px;
+}
+
+.body__text {
+    padding: 16px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.a_loan_reviews::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background: linear-gradient(90deg, #e4a448 0%, #FCB650 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+.loan-reviews.loan-reviews--secondary::before{
+    background: none !important;
+    border-radius: none !important;
+}
+
+.feature .card:hover .btn_theme i{
+    color: white !important;
+}
+.feature .card:hover .btn_theme{
+    color: white !important;
+    
+}
+/* .btn_theme:hover, .btn_theme:focus {
+    border-color: white !important;
+    background-color: white !important;
+} */
+.feature .card .btn_theme:hover{
+    border-color: white !important;
+    background-color: white !important;
+}

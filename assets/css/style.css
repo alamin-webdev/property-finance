@@ -5669,6 +5669,11 @@ label.error {
 /* ==== 
  --------- (6.0) responsive styles start ---------
  ==== */
+@media(min-width: 2560px){
+  .navbar-brand{
+    width: 400px !important;
+  }
+}
 @media (min-width: 1925px) {
   
   .loan-reviews .loan-reviews_card .loan-reviews__part-one {
@@ -5737,7 +5742,7 @@ label.error {
 
 @media (max-width: 1399px) {
   .navbar-brand{
-    width: auto !important;
+    width:auto !important;
   }
   .opacity-xxl-1 {
     opacity: 1;

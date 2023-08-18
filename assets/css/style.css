@@ -5669,7 +5669,7 @@ label.error {
 /* ==== 
  --------- (6.0) responsive styles start ---------
  ==== */
-@media(min-width: 2560px){
+@media(max-width: 2560px){
   .navbar-brand{
     width: 400px !important;
   }

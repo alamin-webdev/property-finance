@@ -255,21 +255,363 @@
     </section>
     <!-- hero-section end -->
 
+
+
+    <section class="choose-us--secondary section">
+        <div class="bg-danger-subtle border-5 border-bottom border-warning container p-4">
+            <h4 class="mb-3">COMPARE 1000S OF FIRST TIME BUYER MORTGAGE RATES & DEALS</h4>
+            <p>Our best buy tables are a great starting point to give you an idea of what rates are available, but to find out which deals you actually qualify for use our Online Mortgage Finder or speak to one of our expert advisers. Whichever one you choose you’ll benefit from our expert help and support throughout the entire mortgage process.</p>
+            <div class="row mt-4">
+                <div class="col-12 col-md-3">
+                    <div class="mb-4">
+                        <h6 for="basic-url" class="form-label">Loan Type</h6>
+                        <div class="btn-group gap-0" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-primary active">Repayment</button>
+                            <button type="button" class="btn btn-primary">interest-only</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="mb-4">
+                        <h6 for="basic-url" class="form-label">House price</h6>
+                        <div class="input-group input-group-lg">
+                            <span class="bg-success input-group-text text-white" id="basic-addon3">£</span>
+                            <input type="number" value="25000" class="form_control_a" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="mb-4">
+                        <h6 for="basic-url" class="form-label">Mortgage term</h6>
+                        <div class="input-group input-group-lg">
+                            <input type="number" value="25" class="form_control_a" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="mb-4">
+                        <h6 for="basic-url" class="form-label">Repayment amount</h6>
+                        <div class="input-group input-group-lg">
+                            <span class="bg-success input-group-text text-white" id="basic-addon3">£</span>
+                            <input type="number" value="0" class="form_control_a" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="mb-4">
+                        <h6 for="basic-url" class="form-label">Interest-only amount</h6>
+                        <div class="input-group input-group-lg">
+                            <span class="bg-success input-group-text text-white" id="basic-addon3">£</span>
+                            <input type="number" value="0" class="form_control_a" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1 align-self-center">
+                    <button class="btn btn-warning"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="loan-reviews loan-reviews--tertiary section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="author__content author__content--secondary wow fadeInUp py-5" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                    <h5 class="author__name mb-2">COMPARE 1000S OF FIRST TIME BUYER MORTGAGE RATES & DEALS</h5>
-                    <p class="author__submit-time">Our best buy tables are a great starting point to give you an idea of what rates are available, but to find out which deals you actually qualify for use our Online Mortgage Finder or speak to one of our expert advisers. Whichever one you choose you’ll benefit from our expert help and support throughout the entire mortgage process.</p>
+                <div class="col-12 col-lg-11 col-xl-9 col-xxl-4 btn_sticky">
+                    <div class="d-inline-block d-xxl-none mb-4">
+                        <button class="sidebar_btn"> <i class="bi bi-layout-text-sidebar"></i> <span>Sidebar Filter</span></button>    
+                    </div>
+                    <div class="sidebar-filter cus_scrollbar sidebar-xxl-fixed">
+                        <div class="sidebar-filter__part">
+                            <h4 class="sidebar-filter__title">Filter</h4>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <form method="POST" id="filter_search" class="filter__search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" required="">
+                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <h5 class="sidebar-filter__part-title">Types of Loan Categories</h5>
+                            <ul class="query">
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_personal" id="queryPersonal" checked="">
+                                        <label for="queryPersonal">Personal Loan</label>
+                                    </div>
+                                    <div class="query_value">586</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="mortgage_loan" id="querypersonal" checked="">
+                                        <label for="querypersonal">Mortgage Loan</label>
+                                    </div>
+                                    <div class="query_value">145</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_student" id="queryStudent" checked="">
+                                        <label for="queryStudent">Student Loan</label>
+                                    </div>
+                                    <div class="query_value">546</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_business" id="queryBusiness" checked="">
+                                        <label for="queryBusiness">Business Loan</label>
+                                    </div>
+                                    <div class="query_value">625</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_home" id="queryHome" checked="">
+                                        <label for="queryHome">Home Equity Loan</label>
+                                    </div>
+                                    <div class="query_value">415</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_debt" id="queryDebt" checked="">
+                                        <label for="queryDebt">Debt Consolidation Loan</label>
+                                    </div>
+                                    <div class="query_value">642</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_construction" id="queryConstruction" checked="">
+                                        <label for="queryConstruction">Construction Loan</label>
+                                    </div>
+                                    <div class="query_value">255</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_equipment" id="queryEquipment" checked="">
+                                        <label for="queryEquipment">Equipment Loan</label>
+                                    </div>
+                                    <div class="query_value">142</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_medical" id="queryMedical" checked="">
+                                        <label for="queryMedical">Medical Loan</label>
+                                    </div>
+                                    <div class="query_value">325</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_wedding" id="queryWedding" checked="">
+                                        <label for="queryWedding">Wedding Loan</label>
+                                    </div>
+                                    <div class="query_value">652</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_vacation" id="queryVacation" checked="">
+                                        <label for="queryVacation">Vacation Loan</label>
+                                    </div>
+                                    <div class="query_value">415</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_renovation" id="queryRenovation" checked="">
+                                        <label for="queryRenovation">Renovation Loan</label>
+                                    </div>
+                                    <div class="query_value">745</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <h5 class="sidebar-filter__part-title">Pricing scale</h5>
+                            
+                            <!-- price-range -->
+                            <div class="sidebar-cat__price-range">
+                                <div class="range-slider">
+                                    <div class="slider-track" style="background: linear-gradient(to right, rgb(218, 218, 229) 10%, rgb(7, 76, 62) 10%, rgb(7, 76, 62) 90%, rgb(218, 218, 229) 90%);"></div>
+                                    <input type="range" min="0" max="10000" value="1000" id="range-slider-1" oninput="slideOne()">
+                                    <input type="range" min="0" max="10000" value="9000" id="range-slider-2" oninput="slideTwo()">
+                                </div>
+                                
+                                <div class="price-values">
+                                    $<span id="min-value">1000</span> - $<span id="max-value">9000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <h5 class="sidebar-filter__part-title">How Many Time For Loan !</h5>
+                            <ul class="query">
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time" id="queryTime" checked="">
+                                        <label for="queryTime">1-3 Days</label>
+                                    </div>
+                                    <div class="query_value">125</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time2" id="queryTime2" checked="">
+                                        <label for="queryTime2">1 Week</label>
+                                    </div>
+                                    <div class="query_value">152</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time3" id="queryTime3" checked="">
+                                        <label for="queryTime3">1-3 Weeks</label>
+                                    </div>
+                                    <div class="query_value">265</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time4" id="queryTime4" checked="">
+                                        <label for="queryTime4">1-3 Days</label>
+                                    </div>
+                                    <div class="query_value">125</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time5" id="queryTime5" checked="">
+                                        <label for="queryTime5">1 Month</label>
+                                    </div>
+                                    <div class="query_value">453</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time6" id="queryTime6" checked="">
+                                        <label for="queryTime6">2-3 Months</label>
+                                    </div>
+                                    <div class="query_value">324</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time7" id="queryTime7" checked="">
+                                        <label for="queryTime7">6 -Months</label>
+                                    </div>
+                                    <div class="query_value">286</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_time8" id="queryTime8" checked="">
+                                        <label for="queryTime8">Less then Year</label>
+                                    </div>
+                                    <div class="query_value">286</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <h5 class="sidebar-filter__part-title">Star Category</h5>
+                            <ul class="query">
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="radio" id="queryStar5" name="radio-group" checked="">
+                                        <label for="queryStar5" class="gap-2"><i class="bi bi-star-fill"></i> 5 Star</label>
+                                    </div>
+                                    <div class="query_value">2456</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="radio" id="queryStar4" name="radio-group">
+                                        <label for="queryStar4" class="gap-2"><i class="bi bi-star-fill"></i> 4 Star</label>
+                                    </div>
+                                    <div class="query_value">3254</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="radio" id="queryStar3" name="radio-group">
+                                        <label for="queryStar3" class="gap-2"><i class="bi bi-star-fill"></i> 3 Star</label>
+                                    </div>
+                                    <div class="query_value">2564</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="radio" id="queryStar2" name="radio-group">
+                                        <label for="queryStar2" class="gap-2"><i class="bi bi-star-fill"></i> 2 Star</label>
+                                    </div>
+                                    <div class="query_value">1544</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="radio" id="queryStar1" name="radio-group">
+                                        <label for="queryStar1" class="gap-2"><i class="bi bi-star-fill"></i> 1 Star</label>
+                                    </div>
+                                    <div class="query_value">965</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-filter__part">
+                            <h5 class="sidebar-filter__part-title">Location</h5>
+                            <ul class="query">
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_all" id="queryAll" checked="">
+                                        <label for="queryAll">All Country</label>
+                                    </div>
+                                    <div class="query_value">9595645</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_australia" id="queryAustralia" checked="">
+                                        <label for="queryAustralia">Australia</label>
+                                    </div>
+                                    <div class="query_value">5456</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_delhi" id="queryDelhi" checked="">
+                                        <label for="queryDelhi">Delhi</label>
+                                    </div>
+                                    <div class="query_value">6565</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_germany" id="queryGermany" checked="">
+                                        <label for="queryGermany">Germany</label>
+                                    </div>
+                                    <div class="query_value">4554</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_hamburg" id="queryHamburg" checked="">
+                                        <label for="queryHamburg">Hamburg</label>
+                                    </div>
+                                    <div class="query_value">7474</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_india" id="queryIndia" checked="">
+                                        <label for="queryIndia">India</label>
+                                    </div>
+                                    <div class="query_value">4457</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_pakistan" id="queryPakistan" checked="">
+                                        <label for="queryPakistan">Pakistan</label>
+                                    </div>
+                                    <div class="query_value">663</div>
+                                </li>
+                                <li class="query__list">
+                                    <div class="query__label">
+                                        <input type="checkbox" name="query_usa" id="queryUSA" checked="">
+                                        <label for="queryUSA">USA</label>
+                                    </div>
+                                    <div class="query_value">5885</div>
+                                </li>
+                            </ul>
+                        </div>                    
+                        <button type="submit" class="btn_theme">Reset Filters<i class="bi bi-arrow-up-right"></i><span></span></button>
+                    </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-11 col-xl-9 col-xxl-8">
                     <div class="d-flex flex-column gap-4">
                         <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/furness.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -281,35 +623,36 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Home Loans Mortgages</h4>
+                                    <p class="reviews-heading__content">America’s Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                    <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/nationwide.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo2.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -321,35 +664,36 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Student Loans</h4>
+                                    <p class="reviews-heading__content">Canada Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                     <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/furness.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo3.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -361,35 +705,36 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Business Loans</h4>
+                                    <p class="reviews-heading__content">Japanes Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                     <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/mansfield.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo4.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -401,35 +746,36 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Construction Loans</h4>
+                                    <p class="reviews-heading__content">America’s Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                     <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/precise.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo5.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -441,35 +787,36 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Equipment Loan</h4>
+                                    <p class="reviews-heading__content">America’s Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                     <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
                             <div class="loan-reviews__part-one">
                                 <div class="loan-reviews__thumb">
-                                    <img src="assets/images/best buy/mansfield.gif" alt="image">
+                                    <img src="assets/images/loan_reviews_logo6.png" alt="image">
                                 </div>
-                                <!-- <div class="loan-reviews__review">
+                                <div class="loan-reviews__review">
                                     <p class="rating"> 4.9</p>
                                     <div class="d-flex gap-2 flex-column">
                                         <div class="star_review">
@@ -481,573 +828,89 @@
                                         </div>
                                         <p class="fs-small">Average Review</p>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="loan-reviews__part-two">
-
+                                <div class="reviews-heading">
+                                    <h4 class="reviews-heading__title">Medical Loan</h4>
+                                    <p class="reviews-heading__content">America’s Largest online mortgage lender</p>
+                                </div>
                                 <div class="reviews-inner">
                                     <ul>
-                                        <p>Initial Rate:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 4.84%
-                                            then 8.49% (variable)</li>
-                                        <p>Overall cost for comparison:</p>
-                                        <li><i class="bi bi-check2-circle"></i> 8.0%
-                                            APRC</li>
+                                        <li><i class="bi bi-check2-circle"></i> Certified pre-approval Process</li>
+                                        <li><i class="bi bi-check2-circle"></i> Online Application Available 24/7</li>
+                                        <li><i class="bi bi-check2-circle"></i>Find a Quote Easily</li>
+                                        <li><i class="bi bi-check2-circle"></i>100% Online Refinance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="loan-reviews__part-three">
                                 <div class="btn-group">
+                                     <a href="#" class="btn_theme btn_theme_active">Visit Site<i class="bi bi-arrow-up-right"></i><span></span></a>
                                     <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                        Apply</a>
+                                    <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions Apply</a>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="Page navigation" class="nav_pagination wow fadeInUp" data-wow-duration="0.8s" style="visibility: hidden; animation-duration: 0.8s; animation-name: none;">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">
+                                        <span class="prev-icon"></span>
+                                    </a></li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link three_dots_box" href="#">
+                                        <span class="three-dots"> </span></a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">
+                                        <span class="next-icon"></span>
+                                    </a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="author__content author__content--secondary wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
 
-    
+                <div class="author__text row mt-4">
+                    <div class="col-12 ">
+                        <p style="text-align: justify;">When compiling our first time buyer best buy tables we compare the best first time buyer mortgage rates from across the UK market, including deals that are exclusive to us. It's important to remember that the best first time buyer mortgage deals are not necessarily about getting the lowest mortgage rate possible, you also need to take into account all the fees and charges associated in setting up your new mortgage deal. <br><br>
 
-    <!-- feature section start  -->
-    <section class="feature feature--tertiary section">
-        <div class="container">
-            <!-- <div class="row justify-content-center">
-                <div class="col-12 col-lg-9 col-xxl-8">
-                    <div class="section__header">
-                        <h2 class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> The key things you need to know about buying your first home</h2>
-                        
-                    </div>
-                </div>
-            </div> -->
-            <div class="row g-3 g-sm-2 g-md-3 g-xxl-4 mb-3">
-                <h5 class="section__header-title wow fadeInUp text-center mb-3" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">The key things you need to know about buying your first home</h5>
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="border-5 border-bottom border-success card m-1 fadeInUp gap-0 h-100 p-0 rounded-0 shadow-sm wow" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="bg-warning-subtle border-0 card-header py-4">
-                            <h4 class="header-title">Starting out: the first steps</h4>
-                        </div>
-                        <div class="border-0 card-body p-3">
-                            <p class="card-text">Calculators and guides to help you take the first steps towards getting a mortgage</p>
+                            By choosing L&C to find your next first time buyer mortgage deal our advisers will research the market for you, looking at criteria, set up fees and the rate to help you compare the best first time buyer mortgage deal for your circumstances, saving you time and effort. Our best buy tables above show you the first time buyer mortgage deals currently available, both fixed rates and variable rates, whether you are looking to purchase or remortgage to a better deal.<br><br>
                             
-                        </div>
-                        <div class="border-5 border-bottom border-success border-top-0 card-footer pb-4 pe-0 ps-0 pt-0">
-                            <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much can I borrow?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much will my mortgage cost?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 bg-warning-subtle">
-                            <a href="#" class="link">How much deposit will I need?</a>
-                        </div>
-                        </div>
-                       
+                            After taking out a first time buyer mortgage or another financial product, 93% of L&C customers would recommend us based on 1462 Reviews.co.uk respondents. Read our reviews</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="border-5 border-bottom border-success card m-1 fadeInUp gap-0 h-100 p-0 rounded-0 shadow-sm wow" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="bg-warning-subtle border-0 card-header py-4">
-                            <h4 class="header-title">Starting out: the first steps</h4>
-                        </div>
-                        <div class="border-0 card-body p-3">
-                            <p class="card-text">Calculators and guides to help you take the first steps towards getting a mortgage</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose-us choose-us--secondary">
+        <div class="animation">
+            <img src="assets/images/hero_vector_arrow.png" alt="Image">
+            <img src="assets/images/choose_vector.png" alt="Image">
+        </div>
+        <div class="container">
+            <div class="row gy-5 gy-lg-0 justify-content-between align-items-center">
+                <div class="col-12 col-lg-7 col-xxl-6">
+                    <div class="section__content ms-lg-4 ms-xl-0">
+                        <!-- <p class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> Mortgage calculators </p> -->
+                        <h4>FINDING THE RIGHT MORTGAGE AS A FIRST TIME BUYER</h4>
+                        <p>Getting onto the property ladder can seem daunting unless you have the right advice and guidance. <br><br>
+
+                            You’ll need to work out if you’re eligible for a mortgage and how much you can borrow, as well as which type of mortgage to go for and how much it’s going to cost you.<br><br>
                             
-                        </div>
-                        <div class="border-5 border-bottom border-success border-top-0 card-footer pb-4 pe-0 ps-0 pt-0">
-                            <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much can I borrow?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much will my mortgage cost?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 bg-warning-subtle">
-                            <a href="#" class="link">How much deposit will I need?</a>
-                        </div>
-                        </div>
-                       
+                            The good news is that it’s easy to get started with your first mortgage with L&C’s online Mortgage Finder. All you need to do is enter your details, including how much you want to borrow and how big a deposit you’ve got to put down and the Mortgage Finder will show you all the deals you are likely to qualify for.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="border-5 border-bottom border-success card m-1 fadeInUp gap-0 h-100 p-0 rounded-0 shadow-sm wow" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="bg-warning-subtle border-0 card-header py-4">
-                            <h4 class="header-title">Starting out: the first steps</h4>
-                        </div>
-                        <div class="border-0 card-body p-3">
-                            <p class="card-text">Calculators and guides to help you take the first steps towards getting a mortgage</p>
-                            
-                        </div>
-                        <div class="border-5 border-bottom border-success border-top-0 card-footer pb-4 pe-0 ps-0 pt-0">
-                            <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much can I borrow?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 mb-1 bg-warning-subtle">
-                            <a href="#" class="link">How much will my mortgage cost?</a>
-                        </div>
-                        <div class="border-5 border-start border-success list-item px-2 py-2 bg-warning-subtle">
-                            <a href="#" class="link">How much deposit will I need?</a>
-                        </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a href="#" class="btn_theme mt_40 wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">See all
-                        mortgage guides<i class="bi bi-arrow-up-right"></i><span style="top: 171.828px; left: 160.406px;"></span></a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- feature section end  -->
-
-    <!-- handy tools section start  -->
-    <section class="feature handy_tools_section section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-9 col-xxl-8">
-                    <div class="section__header">
-                        <h2 class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> Handy tools and calculators for first time buyers</h2>
-                        <h6 class="section__header-title wow fadeInUp text-center mb-3" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">Practical gadgets to help keep things simple</h6>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="row g-3 g-sm-2 g-md-3 g-xxl-4 mb-3">
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="card card--custom wow fadeInUp h-100" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="card__content ">
-                            <h4 class="card__title"><a href="#">How much could I save by remortgaging?</a></h4>
-                            <p class="fs-small">See how much you could save by switching deals</p>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-arrow-up-right"></i><span style="top: 26.1406px; left: -6.15625px;"></span></a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="card card--custom wow fadeInUp h-100" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="card__content ">
-                            <h4 class="card__title"><a href="#">How much can I borrow?</a></h4>
-                            <p class="fs-small">Find out what size mortgage you could get based on your income, with our mortgage affordability calculator.</p>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-arrow-up-right"></i><span style="top: 13.3438px; left: -3.48438px;"></span></a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <div class="card card--custom wow fadeInUp h-100" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                        <div class="card__content ">
-                            <h4 class="card__title"><a href="#">What will happen if rates change?</a></h4>
-                            <p class="fs-small">Use our mortgage interest calculator to understand the impact of changing rates on your mortgage.</p>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-arrow-up-right"></i><span></span></a>                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a href="#" class="btn_theme mt_40 wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">See all
-                        mortgage calculators<i class="bi bi-arrow-up-right"></i><span style="top: 171.828px; left: 160.406px;"></span></a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- handy tools section end  -->
-
-    <!-- latest mortgage offer section start  -->
-    <section class="choose-us ">
-        <div class="container">
-            <div class="row justify-content-center section bg">
-                <div class="col-12 col-lg-9 col-xxl-8">
-                    <div class="section__header">
-                        <h2 class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> Latest mortgage offers</h2>
-                        <h6 class="section__header-title wow fadeInUp text-center mb-3" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">We know how important it is for you to have an idea of some of the best mortgage rates that may be available to you.</h6>
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-xl-10 col-xxl-9">
-                    <div class="loan-reviews loan-reviews--secondary">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-10 col-xxl-9">
-                                <div class="section__header">
-                                    
-                                    <h3 class="section__header-title wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">Latest mortgage best buys</h3>
-                                    <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">Based on a mortgage of £125,000 at 50% LTV</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-12">
-                                <div class="d-flex flex-column gap-4">
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/furness.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/nationwide.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/furness.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/mansfield.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/precise.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                        <div class="loan-reviews__part-one">
-                                            <div class="loan-reviews__thumb">
-                                                <img src="assets/images/best buy/mansfield.gif" alt="image">
-                                            </div>
-                                            <!-- <div class="loan-reviews__review">
-                                                <p class="rating"> 4.9</p>
-                                                <div class="d-flex gap-2 flex-column">
-                                                    <div class="star_review">
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-fill star-active"></i>
-                                                        <i class="bi bi-star-half star-active"></i>
-                                                    </div>
-                                                    <p class="fs-small">Average Review</p>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                        <div class="loan-reviews__part-two">
-
-                                            <div class="reviews-inner">
-                                                <ul>
-                                                    <p>Initial Rate:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 4.84%
-                                                        then 8.49% (variable)</li>
-                                                    <p>Overall cost for comparison:</p>
-                                                    <li><i class="bi bi-check2-circle"></i> 8.0%
-                                                        APRC</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="loan-reviews__part-three">
-                                            <div class="btn-group">
-                                                <a href="loan-reviews-details.html" class="btn_theme">Read More<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                                <a href="faq.html" class="conditions_apply"> Terms &amp; Conditions
-                                                    Apply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="section__cta wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
-                                    <a href="loan-reviews.html" class="btn_theme see_all">See All<i class="bi bi-arrow-up-right"></i><span></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- latest mortgage offer section end  -->
-
-
-    <!-- Client Testimonials start -->
-    <section class="testimonials section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 col-xxl-5">
-                    <div class="section__header">
-                        <h2 class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Word of mouth</h2>
-                        <!-- <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">Word of mouth</h2> -->
-                        <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s">Doing a good job is important to us, so we’re always delighted to receive positive feedback from our customers. <br> Here's what some of them have been saying about us recently.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">            
-                <div class="col-12">
-                    <div class="testimonials-slider wow fadeInUp" data-wow-duration="0.8s">
-                        <div class="card card--custom">
-                            <div class="testimonials__author-review">
-                                <div class="star_review mb-3">
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-half star-active"></i>
-                                </div>
-                                <p class="text-start">Our satisfied clients have experienced success with our services and loan recommendations. Here are some of their testimonials highlighting their positive experiences and the value they received</p>
-                            </div>
-                            <div class="testimonials__author">
-                                <div class="author__thumg">
-                                    <img src="assets/images/testimonials.png" alt="">
-                                </div>
-                                <div class="author__content">
-                                    <h5 class="author__title">Balogh Imre</h5>
-                                    <p class="author__desi">Account Executive</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card--custom">
-                            <div class="testimonials__author-review">
-                                <div class="star_review mb-3">
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-half star-active"></i>
-                                </div>
-                                <p class="text-start">Our satisfied clients have experienced success with our services and loan recommendations. Here are some of their testimonials highlighting their positive experiences and the value they received</p>
-                            </div>
-                            <div class="testimonials__author">
-                                <div class="author__thumg">
-                                    <img src="assets/images/testimonials2.png" alt="">
-                                </div>
-                                <div class="author__content">
-                                    <h5 class="author__title">Kende Attila</h5>
-                                    <p class="author__desi">President of Sales</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card--custom">
-                            <div class="testimonials__author-review">
-                                <div class="star_review mb-3">
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-fill star-active"></i>
-                                    <i class="bi bi-star-half star-active"></i>
-                                </div>
-                                <p class="text-start">Our satisfied clients have experienced success with our services and loan recommendations. Here are some of their testimonials highlighting their positive experiences and the value they received</p>
-                            </div>
-                            <div class="testimonials__author">
-                                <div class="author__thumg">
-                                    <img src="assets/images/testimonials3.png" alt="">
-                                </div>
-                                <div class="author__content">
-                                    <h5 class="author__title">Eleanor Pena</h5>
-                                    <p class="author__desi">Medical Assistant</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    
-                    <div class="slider-navigation wow fadeInRight" data-wow-duration="1.2s">
-                        <button class="prev-testimonials pagination-button">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        
-                        <button class="next-testimonials pagination-button">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Client Testimonials end -->
-
-
-    <!-- contact us section start  -->
-    <section class="loan-solution section">
-        <div class="container position-relative">
-            <div class="row gy-5 gy-xl-0 justify-content-center justify-content-xxl-between align-items-center">
-                <div class="col-12 col-lg-6 col-xxl-6">
-                    <div class="section__content ms-xl-4 ms-xl-0">
+                <div class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0 order-1 order-lg-0">
+                    <div class="section__content ms-xl-4 ms-xl-0 a_card_custom">
                         <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> Call our expert advisers now</span>
 
                         <div class="card card--small ps-0 align-items-center">
@@ -1062,24 +925,259 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn_theme btn_theme_active mt-3 wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">Continue Online <i class="bi bi-globe2"></i><span></span></a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-8 col-md-6 col-xxl-5">
-                    <div class="loan-solution__thumb unset-xxl wow fadeInDown position-relative" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">
-                        <img src="assets/images/loan_solution.png" alt="image">
+                        <a href="contact.html" class="btn_theme btn_theme_active mt-3 wow fadeInDown" data-wow-duration="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-name: fadeInDown;">Continue Online <i class="bi bi-globe2"></i><span></span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- contact us section end  -->
+
+    <section class="section  faq-section wow fadeInUp" data-wow-duration="0.8s" id="faqa" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+        <div class="container">
+             
+            <div class="row justify-content-between gy-4 gy-lg-0">
+                <div class="mb-4">
+                    <h4 class="bg-warning-subtle px-4 py-3 rounded">In this guide</h4>
+                </div>
+                <div class="col-12 col-lg-6 col-xxl-6">
+                    <div class="accordion wow fadeInDown" data-wow-duration="0.8s" id="faq" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">
+                        <div class="accordion-item accordion_bg">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-1" aria-expanded="true" aria-controls="faq-accordion-1"> 
+                                    How do I apply for a loan through your platform?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-2" aria-expanded="true" aria-controls="faq-accordion-2"> 
+                                    What types of loans do you review and compare?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-3" aria-expanded="true" aria-controls="faq-accordion-3"> 
+                                    Can I trust the information provided on your website?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xxl-6">
+                    <div class="accordion wow fadeInUp" data-wow-duration="0.8s" id="faq2" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-accordion-1" aria-expanded="true" aria-controls="faq2-accordion-1"> 
+                                    Can I get a loan with bad credit?
+                                </button>
+                            </h5>
+                            <div id="faq2-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faq2">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-accordion-2" aria-expanded="true" aria-controls="faq2-accordion-2"> 
+                                    Are there any fees associated with taking out a loan?
+                                </button>
+                            </h5>
+                            <div id="faq2-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faq2">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-accordion-3" aria-expanded="true" aria-controls="faq2-accordion-3"> 
+                                    What happens if I miss a loan payment?
+                                </button>
+                            </h5>
+                            <div id="faq2-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faq2">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="author__text row mt-5">
+                <div class="mb-4">
+                    <h4 class="mb-3">Why apply for your first mortgage with L&C?</h4>
+                    <p style="text-align: justify;">When compiling our first time buyer best buy tables we compare the best first time buyer mortgage rates from across the UK market, including deals that are exclusive to us. It's important to remember that the best first time buyer mortgage deals are not necessarily about getting the lowest mortgage rate possible, you also need to take into account all the fees and charges associated in setting up your new mortgage deal. <br><br>
+
+                        By choosing L&C to find your next first time buyer mortgage deal our advisers will research the market for you, looking at criteria, set up fees and the rate to help you compare the best first time buyer mortgage deal for your circumstances, saving you time and effort. Our best buy tables above show you the first time buyer mortgage deals currently available, both fixed rates and variable rates, whether you are looking to purchase or remortgage to a better deal.<br><br>
+                        
+                        After taking out a first time buyer mortgage or another financial product, 93% of L&C customers would recommend us based on 1462 Reviews.co.uk respondents. Read our reviews</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="mb-3">Lending criteria & eligibility</h4>
+                    <p style="text-align: justify;">You must be aged at least 18 to apply for a mortgage as a first time buyer.
+
+                        When you submit your application, lenders will look closely at how much you earn. They will also want to know about all your outgoings, such as any loan or credit card repayments, and the amount you spend on things like travel, food and utilities. If you can reduce unnecessary outgoings before you make an application, it could boost your chances of being accepted.
+                        
+                        They will check your credit history too, which shows how you’ve managed debts in the past. If you’ve been late with or have missed any payments this might have affected your credit score and may mean your mortgage application is refused. You can find out about this in our guide How does your credit score affect your ability to get a mortgage?</p>
+                </div>
+                <div class="mb-4">
+                    <h4 class="mb-3">We offer the best mortgage options for first time buyers</h4>
+                    <p style="text-align: justify;">There are lots of different mortgage options to choose from, so it’s worth weighing up the pros and cons of each before deciding which one to go for.</p>
+                    <ul class="my-4">
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The size of your property.</strong> This matters because the larger it is, the more it will cost to rebuild.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The type of property you have.</strong> For example, a detached, semi-detached or terraced house.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The age of your property. </strong> This is important because the materials used to build older properties tend to be more expensive.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The building materials used. </strong> These can significantly affect the rebuild value and a non-standard construction will increase the rebuild costs.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>Whether it’s a listed property. </strong> This is more than likely going to be more expensive to rebuild.</li>
+                        
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h4 class="mb-3">Choosing your first mortgage</h4>
+                    <p style="text-align: justify;">There are lots of different mortgage options to choose from, so it’s worth weighing up the pros and cons of each before deciding which one to go for.</p>
+                    <ul class="my-4">
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The size of your property.</strong> This matters because the larger it is, the more it will cost to rebuild.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The type of property you have.</strong> For example, a detached, semi-detached or terraced house.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The age of your property. </strong> This is important because the materials used to build older properties tend to be more expensive.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>The building materials used. </strong> These can significantly affect the rebuild value and a non-standard construction will increase the rebuild costs.</li>
+                        <li class="py-2"><i class="bi bi-check2-circle"></i> <strong>Whether it’s a listed property. </strong> This is more than likely going to be more expensive to rebuild.</li>
+                        
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h4 class="mb-3">Start your online search for a first time buyer mortgage</h4>
+                    <p style="text-align: justify;">You must be aged at least 18 to apply for a mortgage as a first time buyer.
+
+                        When you submit your application, lenders will look closely at how much you earn. They will also want to know about all your outgoings, such as any loan or credit card repayments, and the amount you spend on things like travel, food and utilities. If you can reduce unnecessary outgoings before you make an application, it could boost your chances of being accepted.
+                        
+                        They will check your credit history too, which shows how you’ve managed debts in the past. If you’ve been late with or have missed any payments this might have affected your credit score and may mean your mortgage application is refused. You can find out about this in our guide How does your credit score affect your ability to get a mortgage?</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-   
+    <section class="sign-up contact section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9 col-xxl-8">
+                    <div class="section__header">
+                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;"><img src="assets/images/title_vector.png" alt="vector"> First Time Buyer FAQs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 gy-xl-0 justify-content-center justify-content-lg-between">
+                <div class="col-12 col-lg-7 col-xxl-8">
+                    <div class="accordion wow fadeInDown" data-wow-duration="0.8s" id="faq" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInDown;">
+                        <div class="accordion-item accordion_bg">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-1" aria-expanded="true" aria-controls="faq-accordion-1"> 
+                                    What is a remortgage?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        A remortgage is when you move your mortgage on your existing property from one lender to another, or change to a new deal with your current lender. There are a variety of reasons you might do this, but it’s most common when homeowners are coming to the end of their current mortgage deal. It’s always worth shopping around for a good deal on your property remortgage, rather than just staying with your existing lender. Timing is important too, as once you reach the end of your deal, you’ll be switched to their Standard Variable Rate – and that means you could end up paying more interest. Some people also choose to remortgage in the middle of their mortgage deal in order to switch to a better rate. If you do this, you may be subject to Early Repayment Charges, but we can help you work out whether now is the right time to remortgage. Another reason some owners will want to remortgage their property is if they’re looking to borrow more money against it, for example to fund home improvements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-2" aria-expanded="true" aria-controls="faq-accordion-2"> 
+                                    When should I remortgage?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        If you want to remortgage your house or flat, timing is everything. Switch too early and you may be subject to Early Repayment Charges on your current mortgage which will reduce any benefits of cheaper mortgage deals – but leave it too late and you could find yourself paying over the odds. Getting a new deal in place before your existing mortgage deal expires can avoid you paying an expensive Standard Variable Rate. It’s a good idea to start thinking about your next mortgage deal 6 months from your end date and some lenders will even let you ‘lock in’ to a new deal at this time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-3" aria-expanded="true" aria-controls="faq-accordion-3"> 
+                                    How much can I borrow on a remortgage?
+                                </button>
+                            </h5>
+                            <div id="faq-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        The amount you can borrow on a remortgage will depend on both your income and how much equity you have in the property. Although many people just look to switch their mortgage over to a better deal it can also be a good time to raise additional money for things such as home improvements. You can get an idea of how much you could borrow on a remortgage and what it might cost by using our online Mortgage Finder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xxl-4">
+                    <div class="more-help wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                        <h3 class="contact__title wow fadeInUp" data-wow-duration="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">Confused by the options?</h3>
+                        <div class="more-help__content">
+                            
+                            <div class="card card--small">
+                                <div class="card--small-content">
+                                    <h6 class="card--small-title">Choosing the right mortgage for you can be really tricky.</h6>
+                                    <h6 class="card--small-title">At L&amp;C our expert advisers guide you through the process. Simple and efficient.</h6>
+                                    
+                                </div>
+                            </div>
+                            <div class="card card--small">
+                                <div class="card--small-icon">
+                                    <i class="bi bi-telephone"></i> 
+                                </div>
+                                <div class="card--small-content">
+                                    <h5 class="card--small-title">Call Now</h5>
+                                    <div class="gap-1 flex-column">
+                                        <a href="tel:+1234567891" class="card--small-call">(123) 456-7891</a>
+                                        <a href="tel:+1234567891" class="card--small-call">(907) 456-7891</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   
 
     <!-- Footer Area Start -->
     <footer class="footer">

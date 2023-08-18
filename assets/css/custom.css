@@ -178,3 +178,115 @@
     border-color: white !important;
     background-color: white !important;
 }
+
+.a_btn_active{
+    background-color: #c97f17 !important;
+}
+section.loan-solution.section.choose-us {
+    padding-bottom: 140px !important;
+}
+
+/* Off Canvas Panel */
+.offcanvas-panel {
+    background-color: #ececec;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .offcanvas-panel .panel-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+  }
+  .offcanvas-panel.panel-on {
+    visibility: visible;
+    opacity: 1;
+  }
+  .offcanvas-panel.panel-on .panel-overlay {
+    visibility: visible;
+    opacity: 0.4;
+  }
+  .offcanvas-panel.panel-on .offcanvas-panel-inner {
+    visibility: visible;
+    opacity: 1;
+    margin-right: 0;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+  }
+  .offcanvas-panel .offcanvas-panel-inner {
+    width: 100vw;
+    height: 100%;
+    padding: 30px 40px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -300px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media (max-width: 575px) {
+    .offcanvas-panel .offcanvas-panel-inner {
+      padding: 30px 20px;
+    }
+  }
+  .offcanvas-panel .offcanvas-panel-inner .panel-logo, .offcanvas-panel .offcanvas-panel-inner .about-us {
+    margin-bottom: 40px;
+  }
+  .offcanvas-panel .offcanvas-panel-inner::-webkit-scrollbar {
+    display: none;
+  }
+  .offcanvas-panel .panel-widget-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    border-bottom: 2px solid #ededed;
+    font-weight: 600;
+  }
+  .offcanvas-panel .contact-us form .form_control {
+    border: 1px solid rgba(11, 3, 1, 0.1);
+    padding: 15px 25px;
+    margin-bottom: 20px;
+  }
+  .offcanvas-panel .panel-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
+  }

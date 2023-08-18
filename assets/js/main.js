@@ -44,6 +44,17 @@
      
     ==================================================
 ============== */
+var panelIcon = $('.bar-item'),
+panelClose = $('.panel-close,.panel-overlay'),
+panelWrap = $('.offcanvas-panel');
+panelIcon.on('click', function (e) {
+    panelWrap.toggleClass('panel-on');
+    e.preventDefault();
+});
+panelClose.on('click', function (e) {
+    panelWrap.removeClass('panel-on');
+    e.preventDefault();
+});
 
 
     jQuery(document).ready(function () {

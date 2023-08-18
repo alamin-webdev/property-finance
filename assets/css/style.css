@@ -4704,7 +4704,6 @@ label.error {
   position: absolute;
   top: 0;
   height: 100%;
-  width: calc(100% - 320px);
   background: linear-gradient(90deg, #e4a448 0%, #FCB650 100%);
   border-radius: 16px;
   opacity: 0.1000000015;
@@ -6177,6 +6176,10 @@ label.error {
 }
 
 @media (max-width: 575px) {
+
+  .a_footer svg{
+    width: 120px;
+  }
   .col-12 {
     max-width: 400px;
     margin-left: auto;

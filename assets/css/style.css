@@ -3368,6 +3368,7 @@ label.error {
   color: #ffffff;
   text-align: start;
   text-transform: capitalize;
+  padding-top: 35px;
 }
 
 .banner .banner__content .breadcrumb {
@@ -5663,6 +5664,8 @@ label.error {
   border-radius: 16px;
 }
 
+.main-menu.index-page .navbar-nav .nav-item .nav-link {text-wrap: nowrap !important}
+
 /* ==== 
  --------- (5.0) all sections styles end ---------
  ==== */
@@ -5671,7 +5674,7 @@ label.error {
  ==== */
 @media(max-width: 2560px){
   .navbar-brand{
-    width: 400px !important;
+    width: 350px !important;
   }
 }
 @media (min-width: 1925px) {

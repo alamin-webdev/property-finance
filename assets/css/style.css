@@ -6188,6 +6188,9 @@ label.error {
 }
 
 @media (max-width: 575px) {
+  /* .navbar-brand img{
+    width: 35% !important;
+  } */
 
   .a_footer svg{
     width: 120px;

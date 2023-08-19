@@ -3368,6 +3368,7 @@ label.error {
   color: #ffffff;
   text-align: start;
   text-transform: capitalize;
+  padding-top: 35px;
 }
 
 .banner .banner__content .breadcrumb {
